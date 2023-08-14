@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-ymps
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-itwk-tenant/nodejs-users/simple-nodejs-app-ymps@sha256:40211a189b87c1a9c2a18f5ffd8d5f629914ae6c9fbcf6f2b879e9e1f20c65cd
+        name: my-nodejs
+        resources: {}
+status: {}
